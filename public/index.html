@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Верный источник — Новости</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="«Верный источник» — агрегатор заголовков и тизеров из РБК в стиле BBC News. Быстрые ссылки на оригиналы.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-block">Верный</span>
+        <span class="brand-sub">источник</span>
+      </div>
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Поиск по заголовкам…" aria-label="Search">
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav-row">
+        <button class="chip" data-category="">Все</button>
+        <button class="chip" data-category="Политика">Политика</button>
+        <button class="chip" data-category="Экономика">Экономика</button>
+        <button class="chip" data-category="Общество">Общество</button>
+        <button class="chip" data-category="Бизнес">Бизнес</button>
+        <button class="chip" data-category="Технологии">Технологии</button>
+        <button class="chip" data-category="Финансы">Финансы</button>
+        <button class="chip" data-category="Спорт">Спорт</button>
+        <span class="updated" id="updatedAt">Обновление…</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="lead" class="lead-grid" aria-label="Главные материалы"></section>
+    <section aria-label="Лента">
+      <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Источник новостей: <a href="https://www.rbc.ru/" target="_blank" rel="noopener">РБК</a>. Мы показываем заголовки/тизеры и ведём на оригинальные материалы.</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "verny-istochnik",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "«Верный источник» — новостной сайт в стиле BBC News. Агрегирует заголовки/тизеры из RSS РБК и ведёт на оригиналы.",
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
