@@ -8,7 +8,38 @@
   <link rel="stylesheet" href="/styles.css">
   <meta name="description" content="«Верный источник» — агрегатор заголовков и тизеров из РБК в стиле BBC News. Быстрые ссылки на оригиналы.">
 </head>
-<body>
+  <script async src="https://aflt.travel.yandex.ru/widgets/api.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      (function (w) {
+          function start() {
+              w.removeEventListener('YaTravelAffiliateLoaded', start);
+              w.YaTravelAffiliate.createWidget({
+        "type": "hotelsOnMap",
+        "containerId": "travelWidget",
+        "widgetParams": {
+                "affiliateClid": "13651873"
+        },
+        "urlParams": {
+                "origin": "https://travel.yandex.ru/",
+                "partner": "distribution",
+                "params": {
+                        "affiliate_clid": "13651873",
+                        "service": "hotelsOnMap",
+                        "utm_source": "distribution",
+                        "utm_medium": "cpa"
+                }
+        },
+        "theme": "light"
+});
+          }
+
+          w.YaTravelAffiliate
+              ? start()
+              : w.addEventListener('YaTravelAffiliateLoaded', start);
+      })(window);
+  </script>
+    
+<body><div id="travelWidget"></div>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
